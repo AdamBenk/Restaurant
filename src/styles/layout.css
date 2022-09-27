@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton.woff2') format('woff2'),
+    url('../fonts/Anton.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Anton;
+    background-color: #efefef;
+}
+
+.LeftPanel {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: #faf9f7;
+}
+
+.LeftPanel nav {
+    display: flex;
+    justify-items: center;
+}
+
+.LeftPanel ul {
+    padding: 0;
+}
+
+.LeftPanel li {
+    list-style-type: none;
+}
+
+.LeftPanel a {
+    color: rgb(68, 68, 68);
+    text-decoration-line: none;
+}
+
+.LeftPanel li:hover {
+    text-decoration-line: underline;
+}
+
+.LeftPanel footer{
+    text-align: center; 
+}
+
+.RightPanel {
+    position: absolute;
+    width: 1336px;
+    height: 100%;
+    margin-left: 200px;
+    background-color: #efefef;
+}
+
+.RightPanel .Header {
+    height: 550px;
+}
+
+.RightPanel .Header .Blue {
+    position: absolute;
+    height: 550px;
+    width: 68%;
+    background-color: rgb(14, 14, 94);
+}
+
+.RightPanel .Header img {
+    position: absolute;
+    left: 47%;
+    max-height: 480px;
+    z-index: 0;
+}
+
+.RightPanel .Header .transparent {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 450px;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.RightPanel .Header .Buttons {
+    display: flex;
+}
+
+.RightPanel .Header .Buttons button {
+    margin-top: 15px;
+    width: 130px;
+    height: 42px;
+    border-radius: 5%;
+    font-size: 12px;
+}
+
+.RightPanel .Header .Buttons button[name="Specialoffers"] {
+    background-color:rgb(14, 14, 94);
+    color: white;
+}
+
+.RightPanel .Header .Buttons button[name="Specialoffers"]:hover {
+    background-color: white;
+    color: rgb(14, 14, 94);
+}
+
+.RightPanel .Header .Buttons button[name="Specialoffers"]:active {
+    background-color: rgb(111, 103, 103);
+    color: rgb(15, 6, 1);
+    border-width: 3px;
+    border-color: rgb(15, 6, 1);
+}
+
+.RightPanel .Header .Buttons button[name="Seeourmenu"] {
+    background-color: white;
+    color: rgb(14, 14, 94);
+    margin-right: 3px;
+}
+
+.RightPanel .Header .Buttons button[name="Seeourmenu"]:hover {
+    background-color: rgb(14, 14, 94);
+    color: white;
+}
+
+.RightPanel .Header .Buttons button[name="Seeourmenu"]:active {
+    background-color: rgb(111, 103, 103);
+    color: rgb(15, 6, 1);
+    border-width: 3px;
+    border-color: rgb(15, 6, 1);
+}
+
+.Offers {
+    margin: 80px 0 80px 0;
+}
+
+.Offers h1 {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 34px;
+}
+
+.Offers h4 {
+    margin: 0;
+    color: rgb(14, 14, 94);
+    text-align: center;
+}
+
+.OffersGrid {
+    margin-left: 150px;
+    width: 1036px;
+    height: 440px;
+    display: grid;
+    grid-template-columns: repeat(4, 259px);
+    grid-auto-rows: 220px;
+    background-color: white;
+}
+
+.OffersGrid img {
+    width: 259px;
+    height: 220px;
+}
+
+.OffersGrid img:hover {
+    opacity: 0.5;
+}
+
+.OffersGrid h2 {
+    padding: 15px 0 5px 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.OffersGrid section {
+    text-align: center;
+}
+
+.OffersGrid section:hover {
+    background-color: rgb(212, 211, 211);
+}
+.OffersGrid p {
+    padding: 0 25px 0 25px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 2;
+    color: rgb(153, 148, 148)
+}
+
+.OffersGrid .ninedollar {
+    color: #79ba2f;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.AboutUs {
+    position: relative;
+    height: 600px;
+}
+
+.AboutUs .Blue2 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 668px;
+    background-color: rgb(14, 14, 94);
+}
+
+.AboutUs img {
+    position: absolute;
+    right: 150px;
+    top: 15%;
+    max-width: 600px;
+    max-height: auto;
+}
+
+.AboutUsContent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    padding-left: 150px;
+    color: rgb(153, 148, 148);
+    font-size: 12px;
+}
+
+.AboutUs h4 {
+    margin: 120px 0 0 0;
+    color: rgb(14, 14, 94);
+    font-size: 12px;
+}
+
+.AboutUs h1 {
+    font-size: 34px;
+    margin: 0;
+    color: black;
+}
+
+.AboutUs li {
+    list-style: none;
+}
+
+.AboutUs li::before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    padding-right: 5px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6d/Bright_green_checkbox-checked.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+}
+
+.AboutUs a:hover {
+    text-decoration-line: underline;
+}
+
+.AboutUs a {
+    color: rgb(153, 148, 148);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.RightPanel .AboutUs button[name="Seeourmenu2"] {
+    background-color: rgb(14, 14, 94);
+    color: white;
+    margin-top: 15px;
+    width: 130px;
+    height: 42px;
+    border-radius: 5%;
+    font-size: 12px;
+}
+
+.RightPanel .AboutUs button[name="Seeourmenu2"]:hover {
+    background-color: rgb(153, 148, 148);  
+    color: rgb(14, 14, 94);
+}
+
+.RightPanel .AboutUs button[name="Seeourmenu2"]:active {
+    background-color: rgb(111, 103, 103);
+    color: rgb(15, 6, 1);
+    border-width: 3px;
+    border-color: rgb(15, 6, 1);
+}
+
+.HappyCustomers {
+    position: relative;
+    height: 600px;
+    background-color: rgb(241, 233, 233);
+    text-align: center;
+}
+
+.HappyCustomers h4 {
+    margin: 0;
+    padding-top: 100px;
+    color: rgb(14, 14, 94);
+    font-size: 12px;
+}
+
+.HappyCustomers h1 {
+    font-size: 34px;
+    margin: 0;
+    color: black;
+}
+
+.HappyCustomers section {
+    position: absolute;
+    left: 493px;
+    top: 50%;
+    width: 350px;
+    color: rgb(153, 148, 148);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.HappyCustomers footer {
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    color: rgb(153, 148, 148);
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.HappyCustomers footer::after {
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: rgb(153, 148, 148);
+    position: absolute;
+    left: 648px;
+    bottom: 50px; 
+}
+
+.Footer {
+    position: relative;
+    height: 500px;
+    background-color: rgb(14, 14, 94);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.Footer .FooterReadmore {
+    flex-basis: 220px;
+}
+
+.Footer .FooterReadmore p {
+    font-size: 10px;
+}
+
+.Footer .FooterLinks {
+    flex-basis: 100px;
+}
+
+.Footer .FooterOurMenu {
+    flex-basis: 100px;
+}
+
+.Footer .FooterTime {
+    flex-basis: 220px;
+}
+
+.Footer footer {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+.Footer h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.Footer li {
+    list-style-type: none;
+}
+
+.Footer a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.Footer a:hover {
+    text-decoration-line: underline;
+    color: rgb(153, 148, 148);
+}
+
+.Footer span.colorfib {
+    font-size: 14px;
+}
+
+.Footer ul {
+    padding: 0;
+}
