@@ -1,0 +1,27 @@
+
+
+.LeftPanel nav {
+    display: flex;
+    justify-items: center;
+}
+
+.LeftPanel ul {
+    padding: 0;
+}
+
+.LeftPanel li {
+    list-style-type: none;
+}
+
+.LeftPanel a {
+    color: rgb(68, 68, 68);
+    text-decoration-line: none;
+}
+
+.LeftPanel li:hover {
+    text-decoration-line: underline;
+}
+
+.LeftPanel footer{
+    text-align: center;
+}

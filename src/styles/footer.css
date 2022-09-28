@@ -1,2 +1,69 @@
-footer.main-footer {
+
+.RightPanel .Footer {
+    position: relative;
+    height: 500px;
+    background-color: rgb(14, 14, 94);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.RightPanel .Footer .FooterReadmore {
+    flex-basis: 220px;
+}
+
+.RightPanel .Footer .FooterReadmore p {
+    font-size: 10px;
+}
+
+.RightPanel .Footer .FooterLinks {
+    flex-basis: 100px;
+}
+
+.RightPanel .Footer .FooterOurMenu {
+    flex-basis: 100px;
+}
+
+.RightPanel .Footer .FooterTime {
+    flex-basis: 220px;
+}
+
+.RightPanel .Footer footer {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+.RightPanel .Footer h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.RightPanel .Footer li {
+    list-style-type: none;
+}
+
+.RightPanel .Footer a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.RightPanel .Footer a:hover {
+    text-decoration-line: underline;
+    color: rgb(153, 148, 148);
+}
+
+.RightPanel .Footer span.colorfib {
+    font-size: 14px;
+}
+
+.RightPanel .Footer ul {
+    padding: 0;
 }

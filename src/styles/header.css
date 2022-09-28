@@ -1,2 +1,78 @@
-header.main-header {
+
+.RightPanel .Header {
+    height: 550px;
+}
+
+.RightPanel .Header .Blue {
+    position: absolute;
+    height: 550px;
+    width: 68%;
+    background-color: rgb(14, 14, 94);
+}
+
+.RightPanel .Header img {
+    position: absolute;
+    left: 47%;
+    max-height: 480px;
+    z-index: 0;
+}
+
+.RightPanel .Header .transparent {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 450px;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.RightPanel .Header .Buttons {
+    display: flex;
+}
+
+.RightPanel .Header .Buttons button {
+    margin-top: 15px;
+    width: 130px;
+    height: 42px;
+    border-radius: 5%;
+    font-size: 12px;
+}
+
+.RightPanel .Header .Buttons button[name="Specialoffers"] {
+    background-color:rgb(14, 14, 94);
+    color: white;
+}
+
+.RightPanel .Header .Buttons button[name="Specialoffers"]:hover {
+    background-color: white;
+    color: rgb(14, 14, 94);
+}
+
+.RightPanel .Header .Buttons button[name="Specialoffers"]:active {
+    background-color: rgb(111, 103, 103);
+    color: rgb(15, 6, 1);
+    border-width: 3px;
+    border-color: rgb(15, 6, 1);
+}
+
+.RightPanel .Header .Buttons button[name="Seeourmenu"] {
+    background-color: white;
+    color: rgb(14, 14, 94);
+    margin-right: 3px;
+}
+
+.RightPanel .Header .Buttons button[name="Seeourmenu"]:hover {
+    background-color: rgb(14, 14, 94);
+    color: white;
+}
+
+.RightPanel .Header .Buttons button[name="Seeourmenu"]:active {
+    background-color: rgb(111, 103, 103);
+    color: rgb(15, 6, 1);
+    border-width: 3px;
+    border-color: rgb(15, 6, 1);
 }
